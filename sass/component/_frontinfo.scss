@@ -1,0 +1,45 @@
+.frontinfo{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    &__header{
+        text-align: center;
+        &--primary{
+            font-size: 3rem;
+            color: $grey-light-3;
+            font-family: "Raleway";
+            font-weight: 100;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        &--secondary{
+            color: $page-primary-color;
+            font-size: 8rem;
+            text-transform: uppercase;
+            margin-top: 1rem;           
+            letter-spacing: 5px;
+            font-family: "Yatra One";
+        }
+        &--text{
+            color: #fff;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            letter-spacing: .1rem;
+            font-family: "Raleway";
+            margin-bottom:2rem;
+        }
+        &--btn{
+            outline: none;
+            padding:1.5rem 2.5rem;
+            background-color: $page-primary-color;
+            border-radius: 10rem;
+            color: #fff;
+            font-size: 1.6rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            font-family:"Yatra One";
+            cursor: pointer;
+        }
+    }
+}

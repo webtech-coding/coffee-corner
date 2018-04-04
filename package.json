@@ -1,0 +1,14 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "The restaurant layout",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss --watch css/main.css"
+  },
+  "author": "Shovit Thapa",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

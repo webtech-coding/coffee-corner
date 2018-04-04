@@ -1,0 +1,50 @@
+@font-face {
+    font-family:"brand";
+    src: URL('../fonts/brand.ttf') format('ttf');
+}
+.navigationbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__icon{
+        background: $page-primary-color;
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+
+        &--sprite{
+            height:3rem;
+            width: 3rem;
+            fill: $grey-light-3;
+            &:hover{
+                cursor: pointer;
+            } 
+        }
+    }
+
+    &__menu{
+        list-style: none;       
+
+        &--list{
+           display: inline-block;
+           padding:1.8rem .5rem;
+           text-transform: uppercase;
+           
+           .socail__media--icon{
+                height: 1.4rem;
+                width: 1.4rem;
+                fill: $page-primary-color;
+                cursor: pointer;
+                font-weight: 600;
+                @include transition;
+                &:hover{
+                    fill: #fff;
+                }
+           }
+        }
+    }
+
+}

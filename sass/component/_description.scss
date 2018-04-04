@@ -1,0 +1,34 @@
+.description{
+
+    &__text{
+        color: $grey-dark-2;
+        margin-top: 10rem;
+
+        &--header{
+            .title{
+                font-size: 3.5rem;
+                margin: 2rem;
+                margin-left: 0rem;
+                
+
+                &-main{
+                    color: $page-primary-color;
+                    font-size: 4rem;
+                    font-family: "Yatra+One";
+
+                }
+            }
+        }
+        .text{
+            font-size: 1.4rem;
+            word-spacing: .75rem;
+            font-family:"Varela";
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+    }
+    &__image{
+         width:65rem;
+
+    }
+}

@@ -1,0 +1,38 @@
+@mixin transition{
+    transition: all .4s ease-in-out;
+}
+
+@mixin clearfix{
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin transition{
+    transition: all .4s ease-in-out;
+}
+
+@mixin Responsive($device){
+    @if($device==tab-land){
+        @media only screen and (max-width:75em){
+            @content;
+        }
+    }
+    @if($device==tab-port){
+        @media only screen and (max-width:56.25em){
+            @content;
+        }
+    }
+    @if($device==phone){ 
+        @media only screen and (max-width:37.5em){
+            @content;
+        }
+    } 
+    @if($device==xl-desktop){
+        @media only screen and (min-width:112.5em){
+            @content;
+        }
+    }
+}

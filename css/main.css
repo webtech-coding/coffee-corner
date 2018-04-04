@@ -1,0 +1,177 @@
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2); }
+    @media only screen and (max-width: 37.5em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem)/3); }
+    @media only screen and (max-width: 37.5em) {
+      .row .col-1-of-3 {
+        width: 100%; } }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem)/4); }
+    @media only screen and (max-width: 56.25em) {
+      .row .col-1-of-4 {
+        width: 40%; } }
+    @media only screen and (max-width: 37.5em) {
+      .row .col-1-of-4 {
+        width: 100%; } }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem)/3) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem)/4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem)/4) + 2 * 6rem); }
+
+.frontpage {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/bg.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: right;
+  position: relative; }
+
+.navigation {
+  background: rgba(153, 153, 153, 0.2);
+  height: 5.2rem;
+  color: white; }
+
+.description {
+  margin: 2rem 0rem; }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  border: 0rem;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato";
+  font-weight: 100; }
+
+::-webkit-scrollbar {
+  width: 6px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #333;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FCB941;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; }
+
+@font-face {
+  font-family: "brand";
+  src: URL("../fonts/brand.ttf") format("ttf"); }
+
+.navigationbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navigationbar__icon {
+    background: #FCB941;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem; }
+    .navigationbar__icon--sprite {
+      height: 3rem;
+      width: 3rem;
+      fill: #f0eeee; }
+      .navigationbar__icon--sprite:hover {
+        cursor: pointer; }
+  .navigationbar__menu {
+    list-style: none; }
+    .navigationbar__menu--list {
+      display: inline-block;
+      padding: 1.8rem .5rem;
+      text-transform: uppercase; }
+      .navigationbar__menu--list .socail__media--icon {
+        height: 1.4rem;
+        width: 1.4rem;
+        fill: #FCB941;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all .4s ease-in-out; }
+        .navigationbar__menu--list .socail__media--icon:hover {
+          fill: #fff; }
+
+.frontinfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .frontinfo__header {
+    text-align: center; }
+    .frontinfo__header--primary {
+      font-size: 3rem;
+      color: #f0eeee;
+      font-family: "Raleway";
+      font-weight: 100;
+      letter-spacing: 3px;
+      text-transform: uppercase; }
+    .frontinfo__header--secondary {
+      color: #FCB941;
+      font-size: 8rem;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      letter-spacing: 5px;
+      font-family: "Yatra One"; }
+    .frontinfo__header--text {
+      color: #fff;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      letter-spacing: .1rem;
+      font-family: "Raleway";
+      margin-bottom: 2rem; }
+    .frontinfo__header--btn {
+      outline: none;
+      padding: 1.5rem 2.5rem;
+      background-color: #FCB941;
+      border-radius: 10rem;
+      color: #fff;
+      font-size: 1.6rem;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+      font-family: "Yatra One";
+      cursor: pointer; }
+
+.description__text {
+  color: #777;
+  margin-top: 10rem; }
+  .description__text--header .title {
+    font-size: 3.5rem;
+    margin: 2rem;
+    margin-left: 0rem; }
+    .description__text--header .title-main {
+      color: #FCB941;
+      font-size: 4rem;
+      font-family: "Yatra+One"; }
+  .description__text .text {
+    font-size: 1.4rem;
+    word-spacing: .75rem;
+    font-family: "Varela";
+    margin-bottom: 2rem;
+    text-align: justify; }
+
+.description__image {
+  width: 65rem; }

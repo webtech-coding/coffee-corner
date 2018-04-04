@@ -1,0 +1,15 @@
+.frontpage{
+    background-image:linear-gradient(to right, rgba(0,0,0,.8),rgba(0,0,0,.4)), url("../img/bg.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position:right;
+    position: relative;
+}
+.navigation{
+    background: rgba($grey-dark-3,.2);
+    height: 5.2rem;
+    color:white;
+}
+.description{
+    margin: 2rem 0rem;
+}
