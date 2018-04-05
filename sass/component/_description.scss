@@ -28,7 +28,12 @@
     }
     &__image{
         text-align: right;
-         width:45rem;
+        margin-top: 3.5rem;
+        &--img{
+            width:45rem;
+            
+        }
+        
 
     }
 }

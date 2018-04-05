@@ -187,7 +187,9 @@ body {
 
 .description__image {
   text-align: right;
-  width: 45rem; }
+  margin-top: 3.5rem; }
+  .description__image--img {
+    width: 45rem; }
 
 .special::after {
   content: "";
