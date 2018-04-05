@@ -50,6 +50,10 @@
 .special {
   margin: 10rem 0rem; }
 
+.menu {
+  height: 50vh;
+  background-color: #f0eeee; }
+
 * {
   margin: 0rem;
   padding: 0rem;
@@ -182,6 +186,7 @@ body {
     text-align: justify; }
 
 .description__image {
+  text-align: right;
   width: 45rem; }
 
 .special::after {
@@ -244,9 +249,16 @@ body {
   .special__food .special__item:hover .food__item--overlay {
     display: block;
     background-color: rgba(0, 0, 0, 0.6); }
-  .special__food .special__item:hover .special__food .special__item--img {
-    transform: scale(1.5); }
   .special__food .special__item--img {
     width: 100%;
     height: 28rem;
-    transition: all .4s ease-in-out; }
+    transition: all .4s ease; }
+
+.menu__header {
+  font-size: 4.5rem;
+  letter-spacing: .3rem;
+  font-weight: 600;
+  font-family: "Varela";
+  color: #777;
+  text-transform: uppercase;
+  text-align: center; }
