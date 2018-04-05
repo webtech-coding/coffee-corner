@@ -1,0 +1,49 @@
+.special{
+    @include clearfix;
+    &__header{
+        text-align: center;
+        &--primary{
+            color: $page-primary-color;
+            font-size: 2.5rem;
+            font-family: "Raleway";
+            letter-spacing: .1rem;            
+        }
+
+        &--secondary{
+            font-size: 4.5rem;
+            letter-spacing: .3rem;
+            font-weight: 600;
+            font-family: "Varela";
+            color:$grey-dark-2;
+            text-transform: uppercase;
+        }
+    }
+    &__design{
+        display: flex;
+        justify-content: center;
+        margin-top: -8rem;
+
+        &--border{
+            height: .1rem;
+            width: 20%;
+            background:$grey-dark-3;
+            margin-top: 2rem;
+        }
+        &--icon{            
+            .special__icon{
+                fill: $page-primary-color;       
+                width: 3.5rem;
+                height: 3.5rem; 
+                margin: 0rem 1.5rem;    
+            }
+        }
+    }
+
+    &__food{
+        &--img{     
+            width: 100%;       
+            height:28rem;
+        }
+    }
+   
+}

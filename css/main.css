@@ -47,6 +47,9 @@
 .description {
   margin: 2rem 0rem; }
 
+.special {
+  margin-top: 10rem; }
+
 * {
   margin: 0rem;
   padding: 0rem;
@@ -155,9 +158,14 @@ body {
       font-family: "Yatra One";
       cursor: pointer; }
 
+.description::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 .description__text {
   color: #777;
-  margin-top: 10rem; }
+  margin-top: 2rem; }
   .description__text--header .title {
     font-size: 3.5rem;
     margin: 2rem;
@@ -174,4 +182,43 @@ body {
     text-align: justify; }
 
 .description__image {
-  width: 65rem; }
+  width: 45rem; }
+
+.special::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.special__header {
+  text-align: center; }
+  .special__header--primary {
+    color: #FCB941;
+    font-size: 2.5rem;
+    font-family: "Raleway";
+    letter-spacing: .1rem; }
+  .special__header--secondary {
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    font-family: "Varela";
+    color: #777;
+    text-transform: uppercase; }
+
+.special__design {
+  display: flex;
+  justify-content: center;
+  margin-top: -8rem; }
+  .special__design--border {
+    height: .1rem;
+    width: 20%;
+    background: #999;
+    margin-top: 2rem; }
+  .special__design--icon .special__icon {
+    fill: #FCB941;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0rem 1.5rem; }
+
+.special__food--img {
+  width: 100%;
+  height: 28rem; }

@@ -1,8 +1,8 @@
 .description{
-
+    @include clearfix;
     &__text{
         color: $grey-dark-2;
-        margin-top: 10rem;
+        margin-top: 2rem;
 
         &--header{
             .title{
@@ -15,7 +15,6 @@
                     color: $page-primary-color;
                     font-size: 4rem;
                     font-family: "Yatra+One";
-
                 }
             }
         }
@@ -28,7 +27,7 @@
         }
     }
     &__image{
-         width:65rem;
+         width:45rem;
 
     }
 }
