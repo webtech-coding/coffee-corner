@@ -8,13 +8,12 @@
             font-family: "Raleway";
             letter-spacing: .1rem;            
         }
-
         &--secondary{
             font-size: 4.5rem;
             letter-spacing: .3rem;
             font-weight: 600;
             font-family: "Varela";
-            color:$grey-dark-2;
+            color:$grey-dark-2;           
             text-transform: uppercase;
         }
     }
@@ -22,7 +21,7 @@
         display: flex;
         justify-content: center;
         margin-top: -8rem;
-
+       
         &--border{
             height: .1rem;
             width: 20%;
@@ -40,10 +39,10 @@
     }
 
     &__food{
+        margin-top: -6rem;
         .special__item{
             position: relative;
-            height: 28rem;
-           
+            height: 28rem;           
            
             .food__item--overlay{
                 position: absolute;                

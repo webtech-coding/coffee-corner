@@ -45,7 +45,7 @@
   color: white; }
 
 .description {
-  margin: 2rem 0rem; }
+  margin-top: 2rem; }
 
 .special {
   margin: 10rem 0rem; }
@@ -226,35 +226,37 @@ body {
     height: 3.5rem;
     margin: 0rem 1.5rem; }
 
-.special__food .special__item {
-  position: relative;
-  height: 28rem; }
-  .special__food .special__item .food__item--overlay {
-    position: absolute;
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    display: none;
-    cursor: pointer;
-    transition: all .4s ease-in-out; }
-    .special__food .special__item .food__item--overlay-text {
+.special__food {
+  margin-top: -6rem; }
+  .special__food .special__item {
+    position: relative;
+    height: 28rem; }
+    .special__food .special__item .food__item--overlay {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 3rem;
-      color: #FCB941;
-      text-align: center;
-      font-family: "Raleway"; }
-  .special__food .special__item:hover .food__item--overlay {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.6); }
-  .special__food .special__item--img {
-    width: 100%;
-    height: 28rem;
-    transition: all .4s ease; }
+      background-color: transparent;
+      height: 100%;
+      width: 100%;
+      top: 0%;
+      left: 0%;
+      display: none;
+      cursor: pointer;
+      transition: all .4s ease-in-out; }
+      .special__food .special__item .food__item--overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        color: #FCB941;
+        text-align: center;
+        font-family: "Raleway"; }
+    .special__food .special__item:hover .food__item--overlay {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.6); }
+    .special__food .special__item--img {
+      width: 100%;
+      height: 28rem;
+      transition: all .4s ease; }
 
 .menu__header {
   font-size: 4.5rem;
