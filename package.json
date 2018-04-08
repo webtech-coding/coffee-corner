@@ -9,6 +9,7 @@
   "author": "Shovit Thapa",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.3.1",
     "node-sass": "^4.8.3"
   }
 }

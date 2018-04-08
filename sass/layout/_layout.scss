@@ -11,14 +11,25 @@
     color:white;
 }
 .description{
-    margin-top: 2rem;       
-}
-.special{
-    margin: 10rem 0rem;      
-}
-.menu{
-  // background-image: linear-gradient(to right,rgba(0,0,0,.8), rgba(0,0,0,.7)),url("../img/cafe2.jpg");
-    height: 50vh;
-    background-color: $grey-light-3;
+    margin-top: 2rem;    
     
 }
+.special{
+    margin: 2rem 0rem;  
+    //background-color: #f1f1f1;    
+    padding-top: 3rem;
+    padding-bottom: 8rem;    
+}
+.found{
+    background-image: linear-gradient(to right,rgba(0,0,0,.8), rgba(0,0,0,.7)),url("../img/cafe2.jpg");    
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 10rem;
+    background-attachment: fixed;    
+}
+.food{
+    min-height: 50vh;
+    //background-color:$grey-dark-3;
+}
+   

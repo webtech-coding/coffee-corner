@@ -1,0 +1,39 @@
+.food{
+    &__contents{
+        text-align: center;
+        &--item{
+            margin-top:-10rem;
+            box-shadow: 0 .1rem .6rem rgba(0,0,0,.5);
+            height: 40rem;
+            &-img{
+                width:100%;    
+            }
+            &-description{
+                background: #fff;
+                .text-title{
+                    font-size: 3rem;
+                    color: $page-primary-color;
+                    padding: 2rem 0rem;
+                    margin-top:-2px;  
+                    text-transform: uppercase;
+                    font-family: "Raleway"                  
+                } 
+                .text-description{                    
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    color: $grey-dark-2;
+                    padding: 1rem 1rem;
+                    word-spacing: .2rem;
+                }
+                button{
+                    padding:.8rem 3rem;
+                    margin: 1rem 0rem;
+                    background-color: $page-primary-color;
+                    color: $grey-light-1;
+                    font-family: "Yatra One";
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

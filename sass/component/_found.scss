@@ -1,0 +1,35 @@
+.found{
+    &__header{
+        font-size: 4.5rem;
+        letter-spacing: .3rem;
+        font-weight: 600;
+        font-family: "Varela";
+        color:$grey-dark-2;
+        text-transform: uppercase;
+        text-align: center;
+        color: $page-primary-color;        
+        font-family: "Raleway";
+        &-year{            
+            text-align: center;
+            background-color:rgba($page-primary-color,.4);
+            width: 15rem;  
+            height: 15rem;
+            border-radius: 10rem; 
+            display: inline-block;
+            padding-top: 4.5rem;
+            color: white;
+        }
+    }
+    &__content{
+        font-size: 2rem;
+        color: $grey-light-1;
+        text-align: center;
+        word-spacing: .5rem;
+        margin-top: -6rem;
+        &--icon{
+            fill:  $grey-light-1;
+            height: 3.5rem;
+            width: 3.5rem;
+            }
+    }
+}

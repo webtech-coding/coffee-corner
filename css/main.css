@@ -48,11 +48,20 @@
   margin-top: 2rem; }
 
 .special {
-  margin: 10rem 0rem; }
+  margin: 2rem 0rem;
+  padding-top: 3rem;
+  padding-bottom: 8rem; }
 
-.menu {
-  height: 50vh;
-  background-color: #f0eeee; }
+.found {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../img/cafe2.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 10rem;
+  background-attachment: fixed; }
+
+.food {
+  min-height: 50vh; }
 
 * {
   margin: 0rem;
@@ -258,11 +267,64 @@ body {
       height: 28rem;
       transition: all .4s ease; }
 
-.menu__header {
+.found__header {
   font-size: 4.5rem;
   letter-spacing: .3rem;
   font-weight: 600;
   font-family: "Varela";
   color: #777;
   text-transform: uppercase;
+  text-align: center;
+  color: #FCB941;
+  font-family: "Raleway"; }
+  .found__header-year {
+    text-align: center;
+    background-color: rgba(252, 185, 65, 0.4);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+    display: inline-block;
+    padding-top: 4.5rem;
+    color: white; }
+
+.found__content {
+  font-size: 2rem;
+  color: #faf9f9;
+  text-align: center;
+  word-spacing: .5rem;
+  margin-top: -6rem; }
+  .found__content--icon {
+    fill: #faf9f9;
+    height: 3.5rem;
+    width: 3.5rem; }
+
+.food__contents {
   text-align: center; }
+  .food__contents--item {
+    margin-top: -10rem;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
+    height: 40rem; }
+    .food__contents--item-img {
+      width: 100%; }
+    .food__contents--item-description {
+      background: #fff; }
+      .food__contents--item-description .text-title {
+        font-size: 3rem;
+        color: #FCB941;
+        padding: 2rem 0rem;
+        margin-top: -2px;
+        text-transform: uppercase;
+        font-family: "Raleway"; }
+      .food__contents--item-description .text-description {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: #777;
+        padding: 1rem 1rem;
+        word-spacing: .2rem; }
+      .food__contents--item-description button {
+        padding: .8rem 3rem;
+        margin: 1rem 0rem;
+        background-color: #FCB941;
+        color: #faf9f9;
+        font-family: "Yatra One";
+        cursor: pointer; }
