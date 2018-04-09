@@ -63,6 +63,16 @@
 .food {
   min-height: 50vh; }
 
+.serve {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../img/serve.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 50vh; }
+  .serve::after {
+    content: "";
+    clear: both;
+    display: table; }
+
 * {
   margin: 0rem;
   padding: 0rem;
@@ -328,3 +338,27 @@ body {
         color: #faf9f9;
         font-family: "Yatra One";
         cursor: pointer; }
+
+.serve {
+  position: relative; }
+  .serve .serve__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .serve .serve__content--primary {
+      font-size: 4.5rem;
+      color: #FCB941;
+      text-transform: uppercase; }
+    .serve .serve__content--secondary {
+      font-size: 1.6rem;
+      color: #faf9f9;
+      padding: 2rem 3rem;
+      margin-top: 1rem;
+      border-radius: 10rem;
+      background-color: rgba(252, 185, 65, 0.4);
+      letter-spacing: .1rem;
+      font-family: "Varela";
+      outline: none;
+      cursor: pointer; }

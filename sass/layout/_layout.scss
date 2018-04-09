@@ -32,4 +32,12 @@
     min-height: 50vh;
     //background-color:$grey-dark-3;
 }
+.serve{
+    background-image:linear-gradient(to right,rgba(0,0,0,.8), rgba(0,0,0,.7)), url("../img/serve.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height:50vh;
+    //transform: rotate(90deg);    
+    @include clearfix;
    
+}

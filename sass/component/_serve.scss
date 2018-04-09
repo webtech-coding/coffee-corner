@@ -1,0 +1,29 @@
+.serve{
+    position: relative;
+    .serve__content{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;        
+
+        &--primary{
+            font-size: 4.5rem;
+            color:  $page-primary-color;
+            text-transform: uppercase;           
+        }
+        &--secondary{
+            font-size: 1.6rem;
+            color: $grey-light-1;
+            padding: 2rem 3rem;
+            margin-top: 1rem;
+            border-radius: 10rem;
+            background-color: rgba($page-primary-color,.4);
+            letter-spacing: .1rem;
+            font-family: "Varela";
+            outline: none;
+            cursor: pointer;            
+        }
+    }
+
+}
