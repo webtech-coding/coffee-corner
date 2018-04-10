@@ -20,7 +20,7 @@
     &__design{
         display: flex;
         justify-content: center;
-        margin-top: -8rem;
+        margin-top: -2rem;
        
         &--border{
             height: .1rem;
@@ -39,7 +39,7 @@
     }
 
     &__food{
-        margin-top: -6rem;
+        margin-top: 6rem;
         .special__item{
             position: relative;
             height: 28rem;           
