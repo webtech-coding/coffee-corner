@@ -2,7 +2,7 @@
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 2rem; }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -72,6 +72,9 @@
     content: "";
     clear: both;
     display: table; }
+
+.gallery {
+  margin-top: 8rem; }
 
 * {
   margin: 0rem;
@@ -362,3 +365,12 @@ body {
       font-family: "Varela";
       outline: none;
       cursor: pointer; }
+
+.gallery__content::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.gallery__content--item img {
+  width: 100%;
+  height: 23rem; }
