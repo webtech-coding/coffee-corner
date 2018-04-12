@@ -2,10 +2,45 @@
     &__content{
         @include clearfix;
         &--item{
+            position: relative;
+            &:hover img{
+                transform: scale(1.02);
+                -webkit-filter: blur(.12rem);
+                filter: blur(.12rem);
+                opacity: .8;
+            }
+
+            &:hover &-overlay{
+                display: block;
+            }
             img{
                 width: 100%;
                 height: 23rem;
+                @include transition;
+                cursor: pointer;
+                
+                &:hover .gallery__content--item-overlay{
+                    display: block;
+                }
             }
+            &-overlay{   
+                display: none;            
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                animation:GalleyOverlay .1s ease-in;               
+                
+                .overlay--icon{  
+                    position: absolute;                                     
+                    fill: $grey-light-1;
+                    width:3.5rem;
+                    height:3.5rem;
+                    left: 50%; 
+                    
+                }
+            }
+
         }
     }
 }

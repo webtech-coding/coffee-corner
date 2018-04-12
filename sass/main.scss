@@ -1,5 +1,6 @@
 @import "abstract/variables";
 @import "abstract/mixin";
+@import "abstract/animation";
 @import "layout/grid.scss";
 @import "layout/layout";
 @import "base/base";
@@ -11,6 +12,7 @@
 @import "component/food";
 @import "component/serve";
 @import "component/gallery";
+
 //@import "../plugins/slick/slick.scss";
 //@import "../plugins/slick/slick-theme.scss";
 
