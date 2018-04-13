@@ -283,7 +283,7 @@
         
             <div class="row gallery__content">
                     <div class="col-1-of-4 gallery__content--item">
-                        <img src="img/gallery5.jpg" alt="">
+                        <img src="img/gallery5.jpg" alt="" class="gallery-image" onclick="OpenModel(5)">
                         <div class="gallery__content--item-overlay">
                                 <svg class="overlay--icon">
                                         <use xlink:href="img/search.svg#icon-search"></use>
@@ -291,7 +291,7 @@
                         </div>
                     </div>
                     <div class="col-1-of-4 gallery__content--item">
-                        <img src="img/gallery6.jpg" alt="">
+                        <img src="img/gallery6.jpg" alt="" onclick="OpenModel(6)">
                         <div class="gallery__content--item-overlay">
                                 <svg class="overlay--icon">
                                         <use xlink:href="img/search.svg#icon-search"></use>
@@ -299,14 +299,15 @@
                         </div>
                     </div>
                         
-                    <div class="col-1-of-4 gallery__content--item"><img src="img/gallery7.jpg" alt="">
+                    <div class="col-1-of-4 gallery__content--item">
+                        <img src="img/gallery7.jpg" alt="" onclick="OpenModel(7)">
                         <div class="gallery__content--item-overlay">
                                 <svg class="overlay--icon">
                                         <use xlink:href="img/search.svg#icon-search"></use>
                                 </svg>  
                         </div>
                     </div>
-                    <div class="col-1-of-4 gallery__content--item"><img src="img/gallery8.jpg" alt="">
+                    <div class="col-1-of-4 gallery__content--item"><img src="img/gallery8.jpg" alt="" onclick="OpenModel(8)">
                         <div class="gallery__content--item-overlay">
                                 <svg class="overlay--icon">
                                         <use xlink:href="img/search.svg#icon-search"></use>
@@ -315,10 +316,15 @@
                     </div>
                 </div>
         </section>
+
+        <section class="model__box">
+            <span class="model__box--close">&times;</span>
+            <img alt="" class="model__box--img">
+        </section>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="plugins/scrollrevel/scrollreveal.min.js"></script>
-    <script src="js/main.js"></script>
+   
     <script src="plugins/slick/slick.min.js"></script>
-    
+    <script src="js/main.js"></script>
 </body>
 </html>

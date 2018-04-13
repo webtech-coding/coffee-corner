@@ -44,3 +44,12 @@
 .gallery{
     margin-top: 8rem;
 }
+.model__box{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color:rgba(0,0,0,.9);
+    top: 0;
+    left:0;
+}

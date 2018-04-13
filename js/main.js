@@ -18,7 +18,12 @@ $('.special__food').slick({
     centerMode:true,
     cssEase:"ease-in-out",
     speed:1000
-  });
-
+  }); 
 
 });
+
+  //the image model
+  function OpenModel(num){
+    console.log(num);
+    
+  }

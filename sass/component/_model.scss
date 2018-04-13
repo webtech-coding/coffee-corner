@@ -1,0 +1,28 @@
+.model__box{
+    display: none;
+    &--close{
+        position: absolute;
+        right: 2rem;
+        top:2rem;
+        font-size: 2rem;
+        font-weight: 800;
+        color: $grey-light-1;
+        background-color: $page-primary-color;
+        height: 3rem;
+        width: 3rem;
+        text-align: center;
+        line-height: 2.8rem;
+        border-radius: 50%;
+        cursor: pointer;
+        @include transition;
+        &:hover{    
+            transform: rotate(360deg);
+            color:$page-primary-color;
+            background-color:#fff;
+        }
+    }
+    &--img{
+        position: absolute;
+        padding:10rem;
+    }
+}

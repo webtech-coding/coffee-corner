@@ -82,6 +82,15 @@
 .gallery {
   margin-top: 8rem; }
 
+.model__box {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0; }
+
 * {
   margin: 0rem;
   padding: 0rem;
@@ -406,3 +415,28 @@ body {
       width: 3.5rem;
       height: 3.5rem;
       left: 50%; }
+
+.model__box {
+  display: none; }
+  .model__box--close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #faf9f9;
+    background-color: #FCB941;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    line-height: 2.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease-in-out; }
+    .model__box--close:hover {
+      transform: rotate(360deg);
+      color: #FCB941;
+      background-color: #fff; }
+  .model__box--img {
+    position: absolute;
+    padding: 10rem; }
