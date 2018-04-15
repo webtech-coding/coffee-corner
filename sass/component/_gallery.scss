@@ -1,6 +1,30 @@
 .gallery{
-    &__content{
-        @include clearfix;
+    &__content{  
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        &--item{
+            flex: calc(100%/3);
+            overflow: hidden;
+           
+            img{
+                width: 100%;
+                @include transition;
+                cursor: pointer;
+            }
+            img:hover{
+                transform: scale(1.1);
+                opacity: .6;
+            }
+        }
+
+
+
+        /*
         &--item{
             position: relative;
             &:hover img{
@@ -42,5 +66,7 @@
             }
 
         }
+        */
     }
+    
 }

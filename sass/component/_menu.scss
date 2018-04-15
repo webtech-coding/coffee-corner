@@ -1,0 +1,45 @@
+.menu__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--left{        
+     &-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }     
+    }
+    &--price{
+        font-size: 2rem;
+        color: $page-primary-color;
+        font-weight: 500;
+    }
+    &--name{
+        font-size: 2rem;
+        color: $page-primary-color;
+        padding-right: 2rem;
+    }
+    &--dots{
+        border-bottom: 2px dotted $page-primary-color;         
+        flex: 10%;    
+        
+    }
+    &--pic{
+        padding-left: 2rem;
+        margin-right: 5rem;
+
+        img{
+            height: 6.5rem;
+            width: 6.5rem;
+            border-radius: 50%;
+            box-shadow: 0 0 .5rem .2rem rgba(0,0,0,.4);
+        }
+    }
+    &--text{        
+            font-size: 1.4rem;
+            width: 75%;
+            color: $grey-dark-2;       
+    }
+
+
+}

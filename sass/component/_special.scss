@@ -9,7 +9,7 @@
             letter-spacing: .1rem;            
         }
         &--secondary{
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             letter-spacing: .3rem;
             font-weight: 600;
             font-family: "Varela";
@@ -24,7 +24,7 @@
        
         &--border{
             height: .1rem;
-            width: 20%;
+            width: 15%;
             background:$grey-dark-3;
             margin-top: 2rem;
         }
@@ -36,6 +36,15 @@
                 margin: 0rem 1.5rem;    
             }
         }
+    }
+
+    &__text{
+            font-size: 1.4rem;
+            word-spacing: .1rem;
+            font-family:"Varela";
+            margin-bottom: 2rem;
+            text-align: center;
+            color:$grey-dark-2;
     }
 
     &__food{

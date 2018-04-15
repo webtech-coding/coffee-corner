@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="plugins/slick/slick-theme.css">
     <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
  
 </head>
 <body>
@@ -53,18 +54,18 @@
 
         <div class="frontinfo">
             <div class="frontinfo__header">
-                <div class="frontinfo__header--primary">
+                <div class="frontinfo__header--primary" data-aos="fade-up">
                     Popular  choice
                 </div>
-                <div class="frontinfo__header--secondary">
+                <div class="frontinfo__header--secondary"   data-aos="fade-down">
                         Coffee bar
                 </div>
-                <div class="frontinfo__header--text">
+                <div class="frontinfo__header--text" data-aos="fade-right">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                          Ad unde et enim in quibusdam optio eveniet voluptatum dolorem error rerum 
                          sit aliquid molestiae sunt, amet alias molestias accusamus non officia!
                 </div>
-                <button class="frontinfo__header--btn">
+                <button class="frontinfo__header--btn" data-aos="fade-left">
                     reservation
                 </button>
 
@@ -74,7 +75,7 @@
 
     <section class="description">
         <div class="row">
-            <div class="col-2-of-3 description__text">
+            <div class="col-2-of-3 description__text" data-aos="fade-up">
                 <div class="description__text--header">
                     <p class="title">Us, the <span class="title-main">Coffee  Barians !!</span></p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -85,7 +86,7 @@
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam itaque, aliquam fugiat nihil qui iste incidunt accusamus tempora sapiente !</p>
                 </div>
             </div>
-            <div class="col-1-of-3 description__image">
+            <div data-aos="fade-up" class="col-1-of-3 description__image">
                 <img class="description__image-img" src="../img/burger.png">             
             </div>
         </div>
@@ -98,8 +99,9 @@
             </div>
             <div class="special__header--secondary">
                 Fresh and unique
-            </div>            
+            </div>                        
         </div>
+
         <div class="row special__design">
             <div class="special__design--border"></div>
             <div class="special__design--icon">
@@ -109,6 +111,11 @@
             </div>
             <div class="special__design--border"></div>
         </div>
+
+       <p class="row special__text">
+            No nam aeque tollit percipitur, ex vix malis invidunt. Vis in elit nihil, eum libris gloriatur percipitur eu. In eripuit vivendo vis.
+             Et putant eleifend vix, habemus adipiscing at vel. Pri soleat inimicus ex, eum dicat verterem disputationi ei.
+       </p>
 
         <div class="row special__food">
             <div class="col-1-of-3 special__item">
@@ -168,8 +175,7 @@
            Serving since <br>
            <span class="found__header-year">
                1996
-           </span>
-            
+           </span>            
         </div>
         <div class="row found__content">           
             <svg class="found__content--icon">
@@ -280,51 +286,271 @@
                 </div>
             </div> 
 
-        
+            <p class="row special__text">
+                    No nam aeque tollit percipitur, ex vix malis invidunt. Vis in elit nihil, eum libris gloriatur percipitur eu. In eripuit vivendo vis.
+                     Et putant eleifend vix, habemus adipiscing at vel. Pri soleat inimicus ex, eum dicat verterem disputationi ei.
+               </p>
+
+
             <div class="row gallery__content">
-                    <div class="col-1-of-4 gallery__content--item">
-                        <img src="img/gallery5.jpg" alt="" class="gallery-image" onclick="OpenModel(5)">
-                        <div class="gallery__content--item-overlay">
-                                <svg class="overlay--icon">
-                                        <use xlink:href="img/search.svg#icon-search"></use>
-                                </svg>  
-                        </div>
-                    </div>
-                    <div class="col-1-of-4 gallery__content--item">
+                <div class="gallery__content--item">
+                 
+                    <img src="img/gallery1.jpg" alt="" onclick="OpenModel(1)">
+                    <img src="img/gallery2.jpg" alt="" onclick="OpenModel(2)">
+                    <img src="img/gallery3.jpg" alt="" onclick="OpenModel(3)">
+                    
+                </div>
+                <div class="gallery__content--item">
+
+                    
+                        <img src="img/gallery4.jpg" alt="" onclick="OpenModel(4)">
+                        <img src="img/gallery5.jpg" alt="" onclick="OpenModel(5)">
                         <img src="img/gallery6.jpg" alt="" onclick="OpenModel(6)">
-                        <div class="gallery__content--item-overlay">
-                                <svg class="overlay--icon">
-                                        <use xlink:href="img/search.svg#icon-search"></use>
-                                </svg>  
+                </div>
+                <div class="gallery__content--item">
+
+                    
+                        <img src="img/gallery1.jpg" alt="" onclick="OpenModel(1)">
+                        <img src="img/gallery3.jpg" alt="" onclick="OpenModel(3)">
+                        <img src="img/gallery8.jpg" alt="" onclick="OpenModel(8)">
+                </div>
+            </div>
+        </section>   
+        
+        <section class="menu">
+
+                <div class="row special__header">
+                        <div class="special__header--primary">
+                            From menu
                         </div>
+                        <div class="special__header--secondary">
+                           Best selling items
+                        </div>            
                     </div>
+                    <div class="row special__design">
+                        <div class="special__design--border"></div>
+                        <div class="special__design--icon">
+                            <svg class="special__icon">
+                                <use xlink:href="img/menu.svg#icon-open-book"></use>
+                            </svg> 
+                        </div>
+                        <div class="special__design--border"></div>
+                    </div>
+                </div> 
+
+            <div class="menu__container row">
+                <div class="menu__container--left col-1-of-2">
+                   
+                    <div class="menu__container--left-item">
+                            <div class="menu__container--price">
+                                    12.5€ | 
+                                </div>
+                                <div class="menu__container--name">
+                                    Chicken 
+                                </div>
+                                <div class="menu__container--dots">&nbsp;</div>
+                                <div class="menu__container--pic">
+                                    <img src="img/gallery5.jpg" alt="">
+                                </div>
+                    </div>
+                    <p class="menu__container--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Phasellus commodo scelerisque gravida. Interdum et malesuada fames ac ante ipsum
+                         primis in faucibus. Nunc accumsan, augue ac venenatis posuere, risus mauris vehicula est, 
+                         non hendrerit erat diam eget purus. </p>
+                    
+                        <div class="menu__container--left-item">
+                                <div class="menu__container--price">
+                                        12.5€ | 
+                                    </div>
+                                    <div class="menu__container--name">
+                                         Nugets
+                                    </div>
+                                    <div class="menu__container--dots">&nbsp;</div>
+                                    <div class="menu__container--pic">
+                                        <img src="img/gallery7.jpg" alt="">
+                                    </div>
+                        </div>
+                        <p class="menu__container--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Phasellus commodo scelerisque gravida. Interdum et malesuada fames ac ante ipsum primis 
+                             in faucibus. Nunc accumsan, augue ac venenatis posuere, risus mauris vehicula est,
+                              non hendrerit erat diam eget purus. </p> 
+                            <div class="menu__container--left-item">
+                                    <div class="menu__container--price">
+                                            12.5€ | 
+                                        </div>
+                                        <div class="menu__container--name">
+                                             Burger
+                                        </div>
+                                        <div class="menu__container--dots">&nbsp;</div>
+                                        <div class="menu__container--pic">
+                                            <img src="img/gallery4.jpg" alt="">
+                                        </div>
+                            </div>
+                            <p class="menu__container--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Phasellus commodo scelerisque gravida. Interdum et malesuada fames ac ante ipsum
+                                 primis in faucibus. Nunc accumsan, augue ac venenatis posuere, risus mauris vehicula
+                                  est, non hendrerit erat diam eget purus. </p>
+                            <div class="menu__container--left-item">
+                                    <div class="menu__container--price">
+                                            12.5€ | 
+                                        </div>
+                                        <div class="menu__container--name">
+                                             Asian Exotics
+                                        </div>
+                                        <div class="menu__container--dots">&nbsp;</div>
+                                        <div class="menu__container--pic">
+                                            <img src="img/gallery6.jpg" alt="">
+                                        </div>
+                            </div>
+                            <p class="menu__container--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 Phasellus commodo scelerisque gravida. Interdum et malesuada fames ac ante ipsum primis
+                                  in faucibus. Nunc accumsan,augue ac venenatis posuere, risus mauris vehicula est, non hendrerit erat diam eget purus. </p>   
+                </div>
+
+
+                <div class="menu__container--right col-1-of-2">
+                        <div class="menu__container--left-item">
+                                <div class="menu__container--price">
+                                        12.5€ | 
+                                    </div>
+                                    <div class="menu__container--name">
+                                         Nugets
+                                    </div>
+                                    <div class="menu__container--dots">&nbsp;</div>
+                                    <div class="menu__container--pic">
+                                        <img src="img/food1.jpg" alt="">
+                                    </div>
+                        </div>
+                        <p class="menu__container--text">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Phasellus commodo scelerisque gravida.
+                             Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                             Nunc accumsan, augue ac venenatis posuere, risus mauris vehicula est,
+                              non hendrerit erat diam eget purus. </p>
                         
-                    <div class="col-1-of-4 gallery__content--item">
-                        <img src="img/gallery7.jpg" alt="" onclick="OpenModel(7)">
-                        <div class="gallery__content--item-overlay">
-                                <svg class="overlay--icon">
-                                        <use xlink:href="img/search.svg#icon-search"></use>
-                                </svg>  
-                        </div>
-                    </div>
-                    <div class="col-1-of-4 gallery__content--item"><img src="img/gallery8.jpg" alt="" onclick="OpenModel(8)">
-                        <div class="gallery__content--item-overlay">
-                                <svg class="overlay--icon">
-                                        <use xlink:href="img/search.svg#icon-search"></use>
-                                </svg>  
-                        </div>
+                            <div class="menu__container--left-item">
+                                    <div class="menu__container--price">
+                                            12.5€ | 
+                                        </div>
+                                        <div class="menu__container--name">
+                                             Continental
+                                        </div>
+                                        <div class="menu__container--dots">&nbsp;</div>
+                                        <div class="menu__container--pic">
+                                            <img src="img/food2.jpg" alt="">
+                                        </div>
+                            </div>
+                            <p class="menu__container--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 Phasellus commodo scelerisque gravida. Interdum et malesuada fames ac ante ipsum 
+                                 primis in faucibus. Nunc accumsan, augue ac venenatis posuere, 
+                                 risus mauris vehicula est, non hendrerit erat diam eget purus. </p> 
+                                <div class="menu__container--left-item">
+                                        <div class="menu__container--price">
+                                                12.5€ | 
+                                            </div>
+                                            <div class="menu__container--name">
+                                                 Yoghurt 
+                                            </div>
+                                            <div class="menu__container--dots">&nbsp;</div>
+                                            <div class="menu__container--pic">
+                                                <img src="img/food3.jpg" alt="">
+                                            </div>
+                                </div>
+                                <p class="menu__container--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                     Phasellus commodo scelerisque gravida. Interdum et malesuada fames ac 
+                                     ante ipsum primis in faucibus. Nunc accumsan, augue ac venenatis posuere, 
+                                     risus mauris vehicula est, non hendrerit erat diam eget purus. </p>
+                                <div class="menu__container--left-item">
+                                        <div class="menu__container--price">
+                                                12.5€ | 
+                                            </div>
+                                            <div class="menu__container--name">
+                                                 Special desert
+                                            </div>
+                                            <div class="menu__container--dots">&nbsp;</div>
+                                            <div class="menu__container--pic">
+                                                <img src="img/gallery7.jpg" alt="">
+                                            </div>
+                                </div>
+                                <p class="menu__container--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                     Phasellus commodo scelerisque gravida. Interdum et malesuada fames ac
+                                      ante ipsum primis in faucibus. Nunc accumsan, augue ac venenatis posuere,
+                                       risus mauris vehicula est, non hendrerit erat diam eget purus. </p>   
                     </div>
                 </div>
+            </div>
         </section>
+           
+        <section class="copyright">
+                <div class="">&copy; All right reserved - Shovit Thapa, 2018</div>              
+        </section>
+        
+
 
         <section class="model__box">
             <span class="model__box--close">&times;</span>
             <img alt="" class="model__box--img">
         </section>
+
+        <secttion class="footer__menu">
+            <ul class="footer__menu--list">
+                <li class="footer__menu--list-item">
+                    <svg class="footer__icon">
+                            <use xlink:href="img/menu.svg#icon-open-book"></use>
+                    </svg> 
+                </li>
+                <li class="footer__menu--list-item">
+                    <svg class="footer__icon">
+                            <use xlink:href="img/menu.svg#icon-location"></use>
+                    </svg> 
+                </li>
+                <li class="footer__menu--list-item">
+                    <svg class="footer__icon">
+                            <use xlink:href="img/menu.svg#icon-pin"></use>
+                    </svg> 
+                </li>
+            </ul>
+        </secttion>
+
+
+        <!-- 
+        <section class="google__map">
+            <div class="google__map--container row">
+                <div class="col-1-of-2 map__container">
+                    <div id="map"></div>
+                </div>
+                <div class="col-1-of-2 map__info">
+                    this si the 
+                </div>              
+            </div>
+
+            
+            <script>
+                function initMap() {
+                  var uluru = {lat:60.450936, lng: 22.2582674};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
+        </section>
+        -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="plugins/scrollrevel/scrollreveal.min.js"></script>
    
     <script src="plugins/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+
+    
+    <script
+    async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa8QkjFNzuc-sDjUBQOtSZY8ZD-P2CYg4&callback=initMap"
+    type="text/javascript">
+    </script>
 </body>
 </html>
