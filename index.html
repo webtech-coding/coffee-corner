@@ -479,37 +479,21 @@
                 </div>
             </div>
         </section>
-           
-        <section class="copyright">
-                <div class="">&copy; All right reserved - design by Shovit Thapa, 2018</div>              
-        </section>
-        
-
-
         <section class="model__box">
             <span class="model__box--close">&times;</span>
             <img alt="" class="model__box--img">
-        </section>        
+        </section>     
 
-
-        <!-- 
+        
         <section class="google__map">
-            <div class="google__map--container row">
-                <div class="col-1-of-2 map__container">
-                    <div id="map"></div>
-                </div>
-                <div class="col-1-of-2 map__info">
-                    this si the 
-                </div>              
-            </div>
-
-            
+                <div id="map"></div>  
             <script>
                 function initMap() {
                   var uluru = {lat:60.450936, lng: 22.2582674};
                   var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 15,
-                    center: uluru
+                    center: uluru,
+                    mapTypeId:google.maps.MapTypeId.roadmap                    
                   });
                   var marker = new google.maps.Marker({
                     position: uluru,
@@ -518,7 +502,10 @@
                 }
               </script>
         </section>
-        -->
+        <section class="copyright">
+                <div class="">&copy; All right reserved - design by Shovit Thapa, 2018</div>              
+        </section>
+      
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="plugins/scrollrevel/scrollreveal.min.js"></script>
    
