@@ -30,9 +30,14 @@
         width: 100%; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 2rem)/3); }
+    @media only screen and (max-width: 56.25em) {
+      .row .col-1-of-3 {
+        width: 100%;
+        text-align: center; } }
     @media only screen and (max-width: 37.5em) {
       .row .col-1-of-3 {
-        width: 100%; } }
+        width: 100%;
+        text-align: center; } }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 2rem)/4); }
     @media only screen and (max-width: 56.25em) {
@@ -43,6 +48,12 @@
         width: 100%; } }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 2rem)/3) + 2rem); }
+    @media only screen and (max-width: 56.25em) {
+      .row .col-2-of-3 {
+        width: 100%; } }
+    @media only screen and (max-width: 37.5em) {
+      .row .col-2-of-3 {
+        width: 100%; } }
   .row .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 2rem)/4) + 2rem); }
   .row .col-3-of-4 {
@@ -201,6 +212,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 56.25em) {
+    .frontinfo {
+      width: 80%;
+      text-align: center;
+      padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .frontinfo {
+      width: 100%;
+      text-align: center;
+      padding: 2rem; } }
   .frontinfo__header {
     text-align: center; }
     .frontinfo__header--primary {
@@ -210,6 +231,12 @@ body {
       font-weight: 100;
       letter-spacing: 3px;
       text-transform: uppercase; }
+      @media only screen and (max-width: 56.25em) {
+        .frontinfo__header--primary {
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .frontinfo__header--primary {
+          font-size: 2rem; } }
     .frontinfo__header--secondary {
       color: #FCB941;
       font-size: 8rem;
@@ -217,6 +244,15 @@ body {
       margin-top: 1rem;
       letter-spacing: 5px;
       font-family: "Yatra One"; }
+      @media only screen and (max-width: 75em) {
+        .frontinfo__header--secondary {
+          font-size: 4rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .frontinfo__header--secondary {
+          font-size: 4rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .frontinfo__header--secondary {
+          font-size: 3rem; } }
     .frontinfo__header--text {
       color: #fff;
       font-size: 1.8rem;
@@ -224,6 +260,12 @@ body {
       letter-spacing: .1rem;
       font-family: "Raleway";
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .frontinfo__header--text {
+          font-size: 1.6rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .frontinfo__header--text {
+          font-size: 1.4rem; } }
     .frontinfo__header--btn {
       outline: none;
       padding: 1.5rem 2.5rem;
@@ -244,6 +286,10 @@ body {
 .description__text {
   color: #777;
   margin-top: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description__text {
+      text-align: center;
+      padding: 0 3rem; } }
   .description__text--header .title {
     font-size: 3.5rem;
     margin: 2rem;
@@ -262,8 +308,14 @@ body {
 .description__image {
   text-align: right;
   margin-top: 3.5rem; }
-  .description__image--img {
-    width: 45rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description__image-img {
+      width: 50%;
+      text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .description__image-img {
+      width: 50%;
+      text-align: center; } }
 
 .special::after {
   content: "";
@@ -277,6 +329,10 @@ body {
     font-size: 2.5rem;
     font-family: "Raleway";
     letter-spacing: .1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .special__header--primary {
+        font-size: 2rem;
+        text-align: center; } }
   .special__header--secondary {
     font-size: 3.5rem;
     letter-spacing: .3rem;
@@ -284,6 +340,12 @@ body {
     font-family: "Varela";
     color: #777;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .special__header--secondary {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .special__header--secondary {
+        font-size: 3rem; } }
 
 .special__design {
   display: flex;
@@ -307,6 +369,10 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   color: #777; }
+  @media only screen and (max-width: 56.25em) {
+    .special__text {
+      padding: 0 2rem;
+      text-align: justify; } }
 
 .special__food {
   margin-top: 2rem; }

@@ -6,7 +6,12 @@
             color: $page-primary-color;
             font-size: 2.5rem;
             font-family: "Raleway";
-            letter-spacing: .1rem;            
+            letter-spacing: .1rem;   
+            @include Responsive(tab-port){               
+               font-size: 2rem;
+               text-align: center;                
+            }
+                   
         }
         &--secondary{
             font-size: 3.5rem;
@@ -15,6 +20,14 @@
             font-family: "Varela";
             color:$grey-dark-2;           
             text-transform: uppercase;
+
+            @include Responsive(tab-port){               
+                font-size: 3rem;
+                
+            }
+            @include Responsive(phone){              
+                font-size: 3rem;            
+            }   
         }
     }
     &__design{
@@ -45,6 +58,10 @@
             margin-bottom: 2rem;
             text-align: center;
             color:$grey-dark-2;
+            @include Responsive(tab-port){               
+                padding:0 2rem;
+                text-align:justify;    
+            }
     }
 
     &__food{

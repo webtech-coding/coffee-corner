@@ -3,13 +3,16 @@
     &__text{
         color: $grey-dark-2;
         margin-top: 2rem;
+        @include Responsive(tab-port){
+            text-align: center;
+            padding:0 3rem;
+        }
 
         &--header{
             .title{
                 font-size: 3.5rem;
                 margin: 2rem;
-                margin-left: 0rem;
-                
+                margin-left: 0rem;                
 
                 &-main{
                     color: $page-primary-color;
@@ -28,12 +31,19 @@
     }
     &__image{
         text-align: right;
-        margin-top: 3.5rem;
-        &--img{
-            width:45rem;
-            
-        }
-        
-
+        margin-top: 3.5rem;  
+                
+        &-img{          
+             
+            @include Responsive(tab-port){               
+                width: 50%;
+                text-align: center;
+                
+            }
+            @include Responsive(phone){              
+                width: 50%; 
+                text-align: center;            
+            }   
+        }     
     }
 }

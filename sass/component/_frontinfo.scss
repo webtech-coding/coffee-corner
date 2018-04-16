@@ -3,6 +3,17 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    @include Responsive(tab-port){
+        width: 80%;
+        text-align: center;
+        padding:2rem;
+    }
+    @include Responsive(phone){
+        width: 100%;
+        text-align: center;
+        padding:2rem;
+    }
+ 
     &__header{
         text-align: center;
         &--primary{
@@ -12,6 +23,14 @@
             font-weight: 100;
             letter-spacing: 3px;
             text-transform: uppercase;
+
+            @include Responsive(tab-port){
+                font-size: 2.5rem;
+            }
+            
+            @include Responsive(phone){
+                font-size: 2rem;
+            }
         }
         &--secondary{
             color: $page-primary-color;
@@ -20,6 +39,18 @@
             margin-top: 1rem;           
             letter-spacing: 5px;
             font-family: "Yatra One";
+
+            @include Responsive(tab-land){
+                font-size: 4rem;
+            }
+
+            @include Responsive(tab-port){
+                font-size: 4rem;
+            }
+            
+            @include Responsive(phone){
+                font-size: 3rem;
+            }
         }
         &--text{
             color: #fff;
@@ -28,6 +59,13 @@
             letter-spacing: .1rem;
             font-family: "Raleway";
             margin-bottom:2rem;
+
+            @include Responsive(tab-port){
+                font-size: 1.6rem;
+            }
+            @include Responsive(phone){
+                font-size: 1.4rem;
+            }
         }
         &--btn{
             outline: none;
