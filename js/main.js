@@ -21,7 +21,30 @@ $('.special__food').slick({
     autoplay:true,
     centerMode:true,
     cssEase:"ease-in-out",
-    speed:1000
+    speed:1000,
+    autoplaySpeed:3000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          
+          slidesToShow: 2,
+          autoplaySpeed:1500,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: false,
+         
+          slidesToShow: 1,
+          autoplaySpeed:1500,
+        }
+      }
+    ]
   }); 
 
 });

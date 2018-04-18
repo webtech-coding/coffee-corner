@@ -1,10 +1,35 @@
 .food{
+    @include clearfix;
+
+    @include Responsive(tab-port){               
+        width: 90%;
+        margin: 0 auto;      
+        text-align: center;
+        margin-top: 2rem;
+    }
+    @include Responsive(phone){              
+                  
+    }   
+
     &__contents{
         text-align: center;
         &--item{
             margin-top:-10rem;
             box-shadow: 0 .1rem .6rem rgba(0,0,0,.5);
             height: 40rem;
+
+            @include Responsive(tab-land){               
+                margin-top:-5rem;                
+            }
+            @include Responsive(tab-port){               
+                margin-top:2rem;  
+                   
+            }
+            @include Responsive(phone){              
+                margin-top:2rem;   
+                min-height: 100vh;                       
+            }   
+
             &-img{
                 width:100%;    
             }

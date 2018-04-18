@@ -42,10 +42,11 @@
     width: calc((100% - 3 * 2rem)/4); }
     @media only screen and (max-width: 56.25em) {
       .row .col-1-of-4 {
-        width: 40%; } }
+        width: 45%; } }
     @media only screen and (max-width: 37.5em) {
       .row .col-1-of-4 {
-        width: 100%; } }
+        width: 90%;
+        margin: 0 auto; } }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 2rem)/3) + 2rem); }
     @media only screen and (max-width: 56.25em) {
@@ -86,6 +87,12 @@
   background-position: bottom;
   padding-top: 10rem;
   background-attachment: fixed; }
+  @media only screen and (max-width: 56.25em) {
+    .found {
+      padding-top: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .found {
+      padding-top: 2rem; } }
 
 .food {
   min-height: 50vh; }
@@ -95,7 +102,8 @@
   background-size: cover;
   background-position: bottom;
   height: 50vh;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: none; }
   .serve::after {
     content: "";
     clear: both;
@@ -151,7 +159,9 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Lato";
-  font-weight: 100; }
+  font-weight: 100;
+  width: 100%;
+  overflow-x: hidden; }
 
 ::-webkit-scrollbar {
   width: 6px; }
@@ -416,6 +426,15 @@ body {
   text-align: center;
   color: #FCB941;
   font-family: "Raleway"; }
+  @media only screen and (max-width: 75em) {
+    .found__header {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .found__header {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .found__header {
+      font-size: 3rem; } }
   .found__header-year {
     text-align: center;
     background-color: rgba(252, 185, 65, 0.4);
@@ -425,6 +444,16 @@ body {
     display: inline-block;
     padding-top: 4.5rem;
     color: white; }
+    @media only screen and (max-width: 56.25em) {
+      .found__header-year {
+        font-size: 4rem;
+        padding-top: 4.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .found__header-year {
+        font-size: 3rem;
+        width: 10rem;
+        height: 10rem;
+        padding-top: 3rem; } }
 
 .found__content {
   font-size: 2rem;
@@ -432,10 +461,37 @@ body {
   text-align: center;
   word-spacing: .5rem;
   margin-top: 0rem; }
+  @media only screen and (max-width: 56.25em) {
+    .found__content {
+      font-size: 1.6rem;
+      padding: 0rem 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .found__content {
+      font-size: 1.8rem; } }
   .found__content--icon {
     fill: #faf9f9;
     height: 3.5rem;
     width: 3.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .found__content--icon {
+        height: 3rem;
+        width: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .found__content--icon {
+        height: 2.5rem;
+        width: 2.5rem; } }
+
+.food::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+@media only screen and (max-width: 56.25em) {
+  .food {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem; } }
 
 .food__contents {
   text-align: center; }
@@ -443,6 +499,16 @@ body {
     margin-top: -10rem;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
     height: 40rem; }
+    @media only screen and (max-width: 75em) {
+      .food__contents--item {
+        margin-top: -5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .food__contents--item {
+        margin-top: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .food__contents--item {
+        margin-top: 2rem;
+        min-height: 100vh; } }
     .food__contents--item-img {
       width: 100%; }
     .food__contents--item-description {
@@ -555,7 +621,8 @@ body {
 
 .model__box {
   display: none;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .model__box--close {
     position: absolute;
     right: 2rem;
@@ -583,6 +650,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     animation: ZoomModelImage .4s ease-in; }
+    @media only screen and (max-width: 56.25em) {
+      .model__box--img {
+        width: 100%; } }
 
 .google__map {
   margin-bottom: -8rem; }

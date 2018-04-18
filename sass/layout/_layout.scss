@@ -28,6 +28,13 @@
     background-position: bottom;
     padding-top: 10rem;
     background-attachment: fixed;    
+    @include Responsive(tab-port){
+       padding-top: 5rem;
+    }
+    
+    @include Responsive(phone){
+        padding-top: 2rem;
+    }  
 }
 .food{
     min-height: 50vh;
@@ -39,8 +46,10 @@
     background-position: bottom;
     height:50vh;
     background-attachment: fixed;
-    //transform: rotate(90deg);    
-    @include clearfix;   
+    //transform: rotate(90deg); 
+    display: none;  
+    @include clearfix;
+
 }
 .gallery{
     margin: 8rem 0rem;

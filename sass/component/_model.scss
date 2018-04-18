@@ -1,6 +1,7 @@
 .model__box{
     display: none;
     text-align: center;
+    width: 100%;
     &--close{
         position: absolute;
         right: 2rem;
@@ -30,6 +31,15 @@
         left: 50%;
         transform: translate(-50%,-50%);
         animation: ZoomModelImage .4s ease-in;
+
+        @include Responsive(tab-port){               
+            width: 100%;       
+        }
+        @include Responsive(phone){              
+                           
+        }   
+
+
     }
 
 

@@ -39,10 +39,13 @@
         width: calc((100% - 3 * #{$gutter-horizontal})/4);
         
         @include Responsive(tab-port){
-            width: 40%; 
+            width: 45%; 
+            
         }
         @include Responsive(phone){
-            width: 100%; 
+            width: 90%;
+            margin: 0 auto;
+                     
         }        
     }
     .col-2-of-3{
