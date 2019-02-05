@@ -1,4 +1,5 @@
 .found{
+     height: 50vh;
     &__header{
         font-size: 4.5rem;
         letter-spacing: .3rem;
@@ -53,6 +54,8 @@
         text-align: center;
         word-spacing: .5rem;
         margin-top: 0rem;
+        letter-spacing: 1px;
+        
 
         @include Responsive(tab-port){
             font-size: 1.6rem;

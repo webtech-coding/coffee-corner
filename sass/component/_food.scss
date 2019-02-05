@@ -1,4 +1,5 @@
 .food{
+    height: auto !important;
     @include clearfix;
 
     @include Responsive(tab-port){               
@@ -14,6 +15,7 @@
     &__contents{
         text-align: center;
         &--item{
+            
             margin-top:-10rem;
             box-shadow: 0 .1rem .6rem rgba(0,0,0,.5);
             height: 40rem;
@@ -22,12 +24,15 @@
                 margin-top:-5rem;                
             }
             @include Responsive(tab-port){               
-                margin-top:2rem;  
+                margin-top:2rem; 
+                margin-bottom: 50px; 
+                box-shadow: none;
                    
             }
             @include Responsive(phone){              
                 margin-top:2rem;   
-                min-height: 100vh;                       
+                height: auto;
+                                  
             }   
 
             &-img{

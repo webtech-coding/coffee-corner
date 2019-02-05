@@ -94,9 +94,6 @@
     .found {
       padding-top: 2rem; } }
 
-.food {
-  min-height: 50vh; }
-
 .serve {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../img/serve.jpg");
   background-size: cover;
@@ -313,7 +310,8 @@ body {
     word-spacing: .75rem;
     font-family: "Varela";
     margin-bottom: 2rem;
-    text-align: justify; }
+    text-align: justify;
+    font-weight: 100; }
 
 .description__image {
   text-align: right;
@@ -391,7 +389,7 @@ body {
     height: 28rem; }
     .special__food .special__item .food__item--overlay {
       position: absolute;
-      background-color: transparent;
+      background-color: rgba(0, 0, 0, 0);
       height: 100%;
       width: 100%;
       top: 0%;
@@ -416,123 +414,127 @@ body {
       height: 28rem;
       transition: all .4s ease; }
 
-.found__header {
-  font-size: 4.5rem;
-  letter-spacing: .3rem;
-  font-weight: 600;
-  font-family: "Varela";
-  color: #777;
-  text-transform: uppercase;
-  text-align: center;
-  color: #FCB941;
-  font-family: "Raleway"; }
-  @media only screen and (max-width: 75em) {
-    .found__header {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .found__header {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .found__header {
-      font-size: 3rem; } }
-  .found__header-year {
+.found {
+  height: 50vh; }
+  .found__header {
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    font-family: "Varela";
+    color: #777;
+    text-transform: uppercase;
     text-align: center;
-    background-color: rgba(252, 185, 65, 0.4);
-    width: 15rem;
-    height: 15rem;
-    border-radius: 10rem;
-    display: inline-block;
-    padding-top: 4.5rem;
-    color: white; }
-    @media only screen and (max-width: 56.25em) {
-      .found__header-year {
-        font-size: 4rem;
-        padding-top: 4.5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .found__header-year {
-        font-size: 3rem;
-        width: 10rem;
-        height: 10rem;
-        padding-top: 3rem; } }
-
-.found__content {
-  font-size: 2rem;
-  color: #faf9f9;
-  text-align: center;
-  word-spacing: .5rem;
-  margin-top: 0rem; }
-  @media only screen and (max-width: 56.25em) {
-    .found__content {
-      font-size: 1.6rem;
-      padding: 0rem 1rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .found__content {
-      font-size: 1.8rem; } }
-  .found__content--icon {
-    fill: #faf9f9;
-    height: 3.5rem;
-    width: 3.5rem; }
-    @media only screen and (max-width: 56.25em) {
-      .found__content--icon {
-        height: 3rem;
-        width: 3rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .found__content--icon {
-        height: 2.5rem;
-        width: 2.5rem; } }
-
-.food::after {
-  content: "";
-  clear: both;
-  display: table; }
-
-@media only screen and (max-width: 56.25em) {
-  .food {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 2rem; } }
-
-.food__contents {
-  text-align: center; }
-  .food__contents--item {
-    margin-top: -10rem;
-    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
-    height: 40rem; }
+    color: #FCB941;
+    font-family: "Raleway"; }
     @media only screen and (max-width: 75em) {
-      .food__contents--item {
-        margin-top: -5rem; } }
+      .found__header {
+        font-size: 4rem; } }
     @media only screen and (max-width: 56.25em) {
-      .food__contents--item {
-        margin-top: 2rem; } }
+      .found__header {
+        font-size: 4rem; } }
     @media only screen and (max-width: 37.5em) {
-      .food__contents--item {
-        margin-top: 2rem;
-        min-height: 100vh; } }
-    .food__contents--item-img {
-      width: 100%; }
-    .food__contents--item-description {
-      background: #fff; }
-      .food__contents--item-description .text-title {
-        font-size: 3rem;
-        color: #FCB941;
-        padding: 2rem 0rem;
-        margin-top: -2px;
-        text-transform: uppercase;
-        font-family: "Raleway"; }
-      .food__contents--item-description .text-description {
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        color: #777;
-        padding: 1rem 1rem;
-        word-spacing: .2rem; }
-      .food__contents--item-description button {
-        padding: .8rem 3rem;
-        margin: 1rem 0rem;
-        background-color: #FCB941;
-        color: #faf9f9;
-        font-family: "Yatra One";
-        cursor: pointer; }
+      .found__header {
+        font-size: 3rem; } }
+    .found__header-year {
+      text-align: center;
+      background-color: rgba(252, 185, 65, 0.4);
+      width: 15rem;
+      height: 15rem;
+      border-radius: 10rem;
+      display: inline-block;
+      padding-top: 4.5rem;
+      color: white; }
+      @media only screen and (max-width: 56.25em) {
+        .found__header-year {
+          font-size: 4rem;
+          padding-top: 4.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .found__header-year {
+          font-size: 3rem;
+          width: 10rem;
+          height: 10rem;
+          padding-top: 3rem; } }
+  .found__content {
+    font-size: 2rem;
+    color: #faf9f9;
+    text-align: center;
+    word-spacing: .5rem;
+    margin-top: 0rem;
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 56.25em) {
+      .found__content {
+        font-size: 1.6rem;
+        padding: 0rem 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .found__content {
+        font-size: 1.8rem; } }
+    .found__content--icon {
+      fill: #faf9f9;
+      height: 3.5rem;
+      width: 3.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .found__content--icon {
+          height: 3rem;
+          width: 3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .found__content--icon {
+          height: 2.5rem;
+          width: 2.5rem; } }
+
+.food {
+  height: auto !important; }
+  .food::after {
+    content: "";
+    clear: both;
+    display: table; }
+  @media only screen and (max-width: 56.25em) {
+    .food {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 2rem; } }
+  .food__contents {
+    text-align: center; }
+    .food__contents--item {
+      margin-top: -10rem;
+      box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
+      height: 40rem; }
+      @media only screen and (max-width: 75em) {
+        .food__contents--item {
+          margin-top: -5rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .food__contents--item {
+          margin-top: 2rem;
+          margin-bottom: 50px;
+          box-shadow: none; } }
+      @media only screen and (max-width: 37.5em) {
+        .food__contents--item {
+          margin-top: 2rem;
+          height: auto; } }
+      .food__contents--item-img {
+        width: 100%; }
+      .food__contents--item-description {
+        background: #fff; }
+        .food__contents--item-description .text-title {
+          font-size: 3rem;
+          color: #FCB941;
+          padding: 2rem 0rem;
+          margin-top: -2px;
+          text-transform: uppercase;
+          font-family: "Raleway"; }
+        .food__contents--item-description .text-description {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          color: #777;
+          padding: 1rem 1rem;
+          word-spacing: .2rem; }
+        .food__contents--item-description button {
+          padding: .8rem 3rem;
+          margin: 1rem 0rem;
+          background-color: #FCB941;
+          color: #faf9f9;
+          font-family: "Yatra One";
+          cursor: pointer; }
 
 .serve {
   position: relative; }
@@ -563,51 +565,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  /*
-        &--item{
-            position: relative;
-            &:hover img{
-                transform: scale(1.02);
-                -webkit-filter: blur(.12rem);
-                filter: blur(.12rem);
-                opacity: .8;
-            }
-
-            &:hover &-overlay{
-                display: block;
-            }
-            img{
-                width: 100%;
-                height: 23rem;
-                @include transition;
-                cursor: pointer;
-                
-                &:hover .gallery__content--item-overlay{
-                    display: block;
-                }
-            }
-            &-overlay{   
-                display: none;            
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                animation:GalleyOverlay .1s ease-in;               
-                
-                .overlay--icon{  
-                    position: absolute;                                     
-                    fill: $grey-light-1;
-                    width:3.5rem;
-                    height:3.5rem;
-                    left: 50%; 
-                    
-                }
-            }
-
-        }
-        */ }
+  overflow: hidden; }
   .gallery__content--item {
     flex: calc(100%/3);
     overflow: hidden; }
